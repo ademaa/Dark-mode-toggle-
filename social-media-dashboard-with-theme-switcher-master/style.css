@@ -1,0 +1,155 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+  font-family: 'Inter', sans-serif;
+}
+ .headings-light{
+  font-weight: 600;
+  color:  hsl(230, 17%, 14%);
+}
+ .paragraph-light{
+  font-weight: 400;
+  color: hsl(228, 12%, 44%);
+}
+.container-fluid#navigatorbar{
+  padding: 3% 10% 7%;
+  position: absolute;
+}
+.container-fluid{
+  padding: 7% 15%;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-image: linear-gradient(to left,hsl(210, 78%, 56%) , hsl(146, 68%, 55%));
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px;
+  background-image: linear-gradient(to left,hsl(210, 78%, 56%) , hsl(146, 68%, 55%));
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.top-color-light{
+  background-color:  hsl(225, 100%, 98%);
+}
+.box1{
+  text-align: center;
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 8px;
+  padding: 10%;
+  margin: 3%;
+}
+ #section1 .box1{
+  position: relative;
+  top:100px;
+}
+.facebook{
+  border-top: 5px solid hsl(208, 92%, 53%);
+}
+.insta{
+  border-top: 5px solid hsl(37, 97%, 70%);
+}
+.twitter{
+  border-top: 5px solid hsl(203, 89%, 53%);
+}
+.youtube{
+  border-top: 5px solid hsl(348, 97%, 39%);
+}
+.iconlogo{
+  margin-bottom: 35px;
+}
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+}
+/* dark design style */
+.box2{
+  text-align: center;
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 8px;
+  padding: 10%;
+  margin: 3%;
+}
+ #section1 .box2{
+  position: relative;
+  top:100px;
+}
+.top-color-dark{
+  background-color: hsl(232, 19%, 15%);
+}
+.text-color-dark{
+  color: hsl(0, 0%, 100%);
+}
+.up-rate{
+  color: hsl(163, 72%, 41%);
+}
+.down-rate{
+  color: hsl(356, 69%, 56%);
+}
+.body-dark{
+  background-color: hsl(230, 17%, 14%);
+}
+.paragraph-dark{
+  font-weight: 400;
+  color: hsl(228, 34%, 66%);
+}
+.headings-dark{
+  font-weight: 600;
+  color:  hsl(0, 0%, 100%);
+}
+@media (max-width: 780px){
+  .container-fluid#navigatorbar{
+    position: static;
+  }
+  #section1 .box1,.box2{
+   position: static;
+ }
+}
+.checked{
+  opacity: 0.6;
+  padding: 12%;
+}
